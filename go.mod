@@ -8,7 +8,7 @@ require (
 	github.com/go-git/go-git/v5 v5.6.1
 	github.com/gookit/color v1.5.3
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/nextlinux/go-logger v1.1.1
+	github.com/nextlinux/go-logger v1.1.2
 	github.com/nextlinux/go-testutils v0.0.0-20230423054508-482fff308e0e
 	github.com/nextlinux/go-version v1.2.1
 	github.com/scylladb/go-set v1.0.2
@@ -46,7 +46,6 @@ require (
 	github.com/mattn/go-isatty v0.0.18 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/nextlinux/gologger v1.0.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.6 // indirect
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect

@@ -698,14 +698,12 @@ github.com/modern-go/reflect2 v1.0.1/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3Rllmb
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
 github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
-github.com/nextlinux/go-logger v1.1.1 h1:lNbLXDJuFalLM5gaKQ7Ok2jnsORie87qD7WzAqA0EgE=
-github.com/nextlinux/go-logger v1.1.1/go.mod h1:gZMepITjDtV8IjJlirNnX/+E5PeG2FynyZrc386YW5U=
+github.com/nextlinux/go-logger v1.1.2 h1:XnDMw7EEdrLVIYiN4JfPqsgId4cQBoPFBKVcHbhm6H4=
+github.com/nextlinux/go-logger v1.1.2/go.mod h1:fkf4RQntmck5O7Fy3u27u8mmjBNT3RUCymrFhQjUIiE=
 github.com/nextlinux/go-testutils v0.0.0-20230423054508-482fff308e0e h1:KDulZZnZsaH4Ra9iyYTS2kRUCTUEWc1LZg4KVgw4ECw=
 github.com/nextlinux/go-testutils v0.0.0-20230423054508-482fff308e0e/go.mod h1:1VmwrsS5P7FRKjWmBHN2C6EbuioBlLD/q77teh2FO+I=
 github.com/nextlinux/go-version v1.2.1 h1:KESIkO1632VYEzqoAr2rAOkilYlv62qGFcqh1FFj+Js=
 github.com/nextlinux/go-version v1.2.1/go.mod h1:4wk/zi4tfMI+z58/SDR3uDlViAIw+isaY3PaNCUPybk=
-github.com/nextlinux/gologger v1.0.1 h1:kX8J8P/Uy8J4RY3rlgZlBYBdOEV1en2IV9bsW5aD5HU=
-github.com/nextlinux/gologger v1.0.1/go.mod h1:ANenWV2SwlqeeNb4GPBIs9xshJB8lVQecdTl3QBPXAI=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
