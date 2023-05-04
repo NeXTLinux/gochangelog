@@ -5,7 +5,7 @@ import (
 
 	"github.com/anchore/chronicle/internal/bus"
 	"github.com/anchore/chronicle/internal/log"
-	"github.com/anchore/go-logger"
+	"github.com/nextlinux/go-logger"
 )
 
 // SetLogger sets the logger object used for all logging calls.

@@ -12,7 +12,7 @@ import (
 	"github.com/anchore/chronicle/chronicle"
 	"github.com/anchore/chronicle/internal/config"
 	"github.com/anchore/chronicle/internal/log"
-	"github.com/anchore/go-logger/adapter/logrus"
+	"github.com/nextlinux/go-logger/adapter/logrus"
 )
 
 var (
