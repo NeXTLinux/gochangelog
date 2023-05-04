@@ -10,7 +10,7 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/go-git/go-git/v5/plumbing/storer"
 
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 type Tag struct {

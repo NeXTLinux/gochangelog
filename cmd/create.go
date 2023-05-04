@@ -8,10 +8,10 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/format"
-	"github.com/anchore/chronicle/internal/git"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/format"
+	"github.com/nextlinux/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 var createCmd = &cobra.Command{

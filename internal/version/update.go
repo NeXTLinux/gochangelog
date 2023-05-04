@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/anchore/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal"
 	hashiVersion "github.com/nextlinux/go-version"
 )
 
@@ -14,7 +14,7 @@ var latestAppVersionURL = struct {
 	host string
 	path string
 }{
-	host: "https://toolbox-data.anchore.io",
+	host: "https://toolbox-data.nextlinux.io",
 	path: fmt.Sprintf("/%s/releases/latest/VERSION", internal.ApplicationName),
 }
 

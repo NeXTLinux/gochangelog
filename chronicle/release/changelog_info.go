@@ -8,9 +8,9 @@ import (
 
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/internal"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 type ChangelogInfoConfig struct {

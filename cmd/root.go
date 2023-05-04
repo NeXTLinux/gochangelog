@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"github.com/anchore/chronicle/internal/config"
+	"github.com/nextlinux/chronicle/internal/config"
 )
 
 var persistentOpts = config.CliOnlyOptions{}

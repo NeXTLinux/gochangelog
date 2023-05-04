@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/internal"
-	"github.com/anchore/chronicle/internal/git"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 const (
@@ -417,7 +417,7 @@ func getLinkedPRs(allMergedPRs []ghPullRequest, issue ghIssue) (linked []ghPullR
 
 func extractGithubUserAndRepo(u string) (string, string) {
 	switch {
-	// e.g. git@github.com:anchore/chronicle.git
+	// e.g. git@github.com:nextlinux/chronicle.git
 	case strings.HasPrefix(u, "git@"):
 		fields := strings.Split(u, ":")
 		pair := strings.Split(fields[len(fields)-1], "/")
@@ -428,7 +428,7 @@ func extractGithubUserAndRepo(u string) (string, string) {
 
 		return pair[0], strings.TrimSuffix(pair[1], ".git")
 
-	// https://github.com/anchore/chronicle.git
+	// https://github.com/nextlinux/chronicle.git
 	case strings.HasPrefix(u, "https://") || strings.HasPrefix(u, "http://"):
 		urlObj, err := url.Parse(u)
 		if err != nil {

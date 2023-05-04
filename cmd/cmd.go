@@ -9,9 +9,9 @@ import (
 	"github.com/spf13/viper"
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/chronicle/chronicle"
-	"github.com/anchore/chronicle/internal/config"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/chronicle"
+	"github.com/nextlinux/chronicle/internal/config"
+	"github.com/nextlinux/chronicle/internal/log"
 	"github.com/nextlinux/go-logger/adapter/logrus"
 )
 

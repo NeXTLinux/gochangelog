@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/anchore/chronicle/internal"
-	"github.com/anchore/chronicle/internal/version"
+	"github.com/nextlinux/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal/version"
 )
 
 var outputFormat string

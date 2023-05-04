@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/adrg/xdg v0.4.0
-	github.com/anchore/chronicle v0.6.0
+	github.com/nextlinux/chronicle v0.6.0
 	github.com/coreos/go-semver v0.3.1
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/gookit/color v1.5.2
@@ -29,8 +29,8 @@ require (
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/ProtonMail/go-crypto v0.0.0-20210428141323-04723f9f07d7 // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
-	github.com/anchore/go-logger v0.0.0-20220728155337-03b66a5207d8 // indirect
-	github.com/anchore/go-version v1.2.2-0.20210903204242-51efa5b487c4 // indirect
+	github.com/nextlinux/go-logger v0.0.0-20220728155337-03b66a5207d8 // indirect
+	github.com/nextlinux/go-version v1.2.2-0.20210903204242-51efa5b487c4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect

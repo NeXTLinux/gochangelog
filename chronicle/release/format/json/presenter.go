@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/anchore/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release"
 )
 
 type Presenter struct {

@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/internal/git"
 )
 
 func Test_extractGithubUserAndRepo(t *testing.T) {

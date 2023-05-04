@@ -3,8 +3,8 @@ package chronicle
 import (
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/chronicle/internal/bus"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/internal/bus"
+	"github.com/nextlinux/chronicle/internal/log"
 	"github.com/nextlinux/go-logger"
 )
 

@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/internal/git"
 )
 
 func TestFindChangelogEndTag(t *testing.T) {

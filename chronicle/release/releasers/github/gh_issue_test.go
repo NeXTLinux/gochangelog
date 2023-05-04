@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
 )
 
 func Test_issuesAtOrAfter(t *testing.T) {

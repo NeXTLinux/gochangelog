@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/wagoodman/go-presenter"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
 	"github.com/nextlinux/go-testutils"
 )
 
@@ -52,8 +52,8 @@ func TestMarkdownPresenter_Present(t *testing.T) {
 						Version: "v0.19.1",
 						Date:    time.Date(2021, time.September, 16, 19, 34, 0, 0, time.UTC),
 					},
-					VCSReferenceURL: "https://github.com/anchore/syft/tree/v0.19.1",
-					VCSChangesURL:   "https://github.com/anchore/syft/compare/v0.19.0...v0.19.1",
+					VCSReferenceURL: "https://github.com/nextlinux/syft/tree/v0.19.1",
+					VCSChangesURL:   "https://github.com/nextlinux/syft/compare/v0.19.0...v0.19.1",
 					Changes: []change.Change{
 						{
 							ChangeTypes: []change.Type{change.NewType("bug", change.SemVerPatch)},
@@ -61,7 +61,7 @@ func TestMarkdownPresenter_Present(t *testing.T) {
 							References: []change.Reference{
 								{
 									Text: "456",
-									URL:  "https://github.com/anchore/syft/pull/456",
+									URL:  "https://github.com/nextlinux/syft/pull/456",
 								},
 							},
 						},

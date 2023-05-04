@@ -8,8 +8,8 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"github.com/anchore/chronicle/internal/git"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 var nextVersionCmd = &cobra.Command{
