@@ -92,15 +92,6 @@ jobs:
         with:
           artifact-name: sbom.spdx.json
 
-      - uses: 8398a7/action-slack@v3
-        with:
-          status: ${{ job.status }}
-          fields: repo,workflow,action,eventName
-          text: "A new Chronicle release is ready to be manually published: https://github.com/anchore/chronicle/releases"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_TOOLBOX_WEBHOOK_URL }}
-        if: ${{ success() }}
-
       - uses: actions/upload-artifact@v3
         with:
           name: artifacts
