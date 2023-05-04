@@ -5,12 +5,12 @@ go 1.17
 require (
 	github.com/adrg/xdg v0.4.0
 	github.com/anchore/chronicle v0.6.0
-	github.com/anchore/go-testutils v0.0.0-20200925183923-d5f45b0d3c04
 	github.com/coreos/go-semver v0.3.1
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/gookit/color v1.5.2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/nextlinux/go-logger v1.1.1
+	github.com/nextlinux/go-testutils v0.0.0-20230423054508-482fff308e0e
 	github.com/nextlinux/go-version v1.2.1
 	github.com/scylladb/go-set v1.0.2
 	github.com/sergi/go-diff v1.3.1

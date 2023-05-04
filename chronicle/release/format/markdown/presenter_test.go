@@ -12,7 +12,7 @@ import (
 
 	"github.com/anchore/chronicle/chronicle/release"
 	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/go-testutils"
+	"github.com/nextlinux/go-testutils"
 )
 
 var updateMarkdownPresenterGoldenFiles = flag.Bool("update-markdown", false, "update the *.golden files for markdown presenters")
