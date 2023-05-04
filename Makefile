@@ -13,7 +13,7 @@ RESULTSDIR = test/results
 COVER_REPORT = $(RESULTSDIR)/unit-coverage-details.txt
 COVER_TOTAL = $(RESULTSDIR)/unit-coverage-summary.txt
 LINT_CMD = $(TEMPDIR)/golangci-lint run --tests=false --timeout=2m --config .golangci.yaml
-GOIMPORTS_CMD = $(TEMPDIR)/gosimports -local github.com/anchore
+GOIMPORTS_CMD = $(TEMPDIR)/gosimports -local github.com/nextlinux
 # the quality gate lower threshold for unit test total % coverage (by function statements)
 COVERAGE_THRESHOLD := 50
 # CI cache busting values; change these if you want CI to not use previous stored cache
@@ -86,7 +86,7 @@ bootstrap-tools: $(TEMPDIR)
 	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(TEMPDIR)/ v1.47.2
 	curl -sSfL https://raw.githubusercontent.com/wagoodman/go-bouncer/master/bouncer.sh | sh -s -- -b $(TEMPDIR)/ v0.4.0
 	# we purposefully use the latest version of chronicle released
-	curl -sSfL https://raw.githubusercontent.com/anchore/chronicle/main/install.sh | sh -s -- -b $(TEMPDIR)/ v0.6.0
+	curl -sSfL https://raw.githubusercontent.com/nextlinux/chronicle/main/install.sh | sh -s -- -b $(TEMPDIR)/ v0.6.0
 	.github/scripts/goreleaser-install.sh -b $(TEMPDIR)/ v0.182.1
 	# the only difference between goimports and gosimports is that gosimports removes extra whitespace between import blocks (see https://github.com/golang/go/issues/20818)
 	GOBIN="$(shell realpath $(TEMPDIR))" go install github.com/rinchsan/gosimports/cmd/gosimports@v0.1.5
@@ -139,7 +139,7 @@ check-go-mod-tidy:
 .PHONY: unit
 unit: $(RESULTSDIR) fixtures ## Run unit tests (with coverage)
 	$(call title,Running unit tests)
-	go test  -coverprofile $(COVER_REPORT) $(shell go list ./... | grep -v anchore/chronicle/test)
+	go test  -coverprofile $(COVER_REPORT) $(shell go list ./... | grep -v nextlinux/chronicle/test)
 	@go tool cover -func $(COVER_REPORT) | grep total |  awk '{print substr($$3, 1, length($$3)-1)}' > $(COVER_TOTAL)
 	@echo "Coverage: $$(cat $(COVER_TOTAL))"
 	@if [ $$(echo "$$(cat $(COVER_TOTAL)) >= $(COVERAGE_THRESHOLD)" | bc -l) -ne 1 ]; then echo "$(RED)$(BOLD)Failed coverage quality gate (> $(COVERAGE_THRESHOLD)%)$(RESET)" && false; fi
