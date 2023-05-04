@@ -1,6 +1,6 @@
 package release
 
-import "github.com/anchore/chronicle/chronicle/release/change"
+import "github.com/nextlinux/chronicle/chronicle/release/change"
 
 type MockVersionSpeculator struct {
 	MockNextIdealVersion  string

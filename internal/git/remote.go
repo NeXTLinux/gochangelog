@@ -7,7 +7,7 @@ import (
 	"path"
 	"regexp"
 
-	"github.com/anchore/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal"
 )
 
 var remotePattern = regexp.MustCompile(`\[remote\s*"origin"]\s*\n\s*url\s*=\s*(?P<url>[^\s]+)\s+`)

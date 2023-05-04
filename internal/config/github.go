@@ -3,8 +3,8 @@ package config
 import (
 	"github.com/spf13/viper"
 
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/chronicle/release/releasers/github"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release/releasers/github"
 )
 
 type githubSummarizer struct {

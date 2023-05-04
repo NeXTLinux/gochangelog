@@ -1,7 +1,7 @@
 package release
 
 import (
-	"github.com/anchore/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
 )
 
 // Summarizer is an abstraction for summarizing release information from a source (e.g. GitBub, GitLab, local repo tags, etc).
@@ -15,9 +15,9 @@ type Summarizer interface {
 	// Changes returns all changes between the two given references (e.g. tag or commits). If `untilRef` is not provided then the latest VCS change found will be used.
 	Changes(sinceRef, untilRef string) ([]change.Change, error)
 
-	// ReferenceURL is the URL to find more information about this release, e.g. https://github.com/anchore/chronicle/releases/tag/v0.4.1 .
+	// ReferenceURL is the URL to find more information about this release, e.g. https://github.com/nextlinux/chronicle/releases/tag/v0.4.1 .
 	ReferenceURL(tag string) string
 
-	// ChangesURL is the URL to find the specific source changes that makeup this release, e.g. https://github.com/anchore/chronicle/compare/v0.3.0...v0.4.1 .
+	// ChangesURL is the URL to find the specific source changes that makeup this release, e.g. https://github.com/nextlinux/chronicle/compare/v0.3.0...v0.4.1 .
 	ChangesURL(sinceRef, untilRef string) string
 }

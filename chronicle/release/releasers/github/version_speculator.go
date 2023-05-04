@@ -6,9 +6,9 @@ import (
 
 	"github.com/coreos/go-semver/semver"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/internal/git"
 )
 
 var _ release.VersionSpeculator = (*VersionSpeculator)(nil)

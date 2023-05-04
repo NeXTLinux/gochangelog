@@ -1,7 +1,7 @@
 package release
 
 import (
-	"github.com/anchore/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
 )
 
 type MockSummarizer struct {

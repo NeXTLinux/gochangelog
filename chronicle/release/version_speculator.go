@@ -1,6 +1,6 @@
 package release
 
-import "github.com/anchore/chronicle/chronicle/release/change"
+import "github.com/nextlinux/chronicle/chronicle/release/change"
 
 // SpeculationBehavior contains configuration that controls how to determine the next release version.
 type SpeculationBehavior struct {

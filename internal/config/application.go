@@ -12,8 +12,8 @@ import (
 	"github.com/spf13/viper"
 	"gopkg.in/yaml.v2"
 
-	"github.com/anchore/chronicle/internal"
-	"github.com/anchore/go-logger"
+	"github.com/nextlinux/chronicle/internal"
+	"github.com/nextlinux/go-logger"
 )
 
 var ErrApplicationConfigNotFound = fmt.Errorf("application config not found")

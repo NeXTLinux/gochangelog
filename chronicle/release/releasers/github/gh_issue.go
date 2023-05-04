@@ -9,8 +9,8 @@ import (
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
 
-	"github.com/anchore/chronicle/internal"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/internal"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 type ghIssue struct {

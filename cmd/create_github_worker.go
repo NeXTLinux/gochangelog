@@ -3,11 +3,11 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/change"
-	"github.com/anchore/chronicle/chronicle/release/releasers/github"
-	"github.com/anchore/chronicle/internal/git"
-	"github.com/anchore/chronicle/internal/log"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/change"
+	"github.com/nextlinux/chronicle/chronicle/release/releasers/github"
+	"github.com/nextlinux/chronicle/internal/git"
+	"github.com/nextlinux/chronicle/internal/log"
 )
 
 func createChangelogFromGithub() (*release.Release, *release.Description, error) {

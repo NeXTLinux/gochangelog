@@ -5,10 +5,10 @@ import (
 
 	"github.com/wagoodman/go-presenter"
 
-	"github.com/anchore/chronicle/chronicle/release"
-	"github.com/anchore/chronicle/chronicle/release/format"
-	"github.com/anchore/chronicle/chronicle/release/format/json"
-	"github.com/anchore/chronicle/chronicle/release/format/markdown"
+	"github.com/nextlinux/chronicle/chronicle/release"
+	"github.com/nextlinux/chronicle/chronicle/release/format"
+	"github.com/nextlinux/chronicle/chronicle/release/format/json"
+	"github.com/nextlinux/chronicle/chronicle/release/format/markdown"
 )
 
 type presentationTask func(description release.Description) (presenter.Presenter, error)

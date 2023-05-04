@@ -1,8 +1,8 @@
 package log
 
 import (
-	"github.com/anchore/go-logger"
-	"github.com/anchore/go-logger/adapter/discard"
+	"github.com/nextlinux/go-logger"
+	"github.com/nextlinux/go-logger/adapter/discard"
 )
 
 // Log is the singleton used to facilitate logging internally within chronicle
