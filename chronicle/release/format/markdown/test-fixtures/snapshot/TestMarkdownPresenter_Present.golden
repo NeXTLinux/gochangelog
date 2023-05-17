@@ -1,12 +1,12 @@
 # Changelog
 
-## [v0.19.1](https://github.com/nextlinux/syft/tree/v0.19.1) (2021-09-16)
+## [v0.19.1](https://github.com/nextlinux/gosbom/tree/v0.19.1) (2021-09-16)
 
-[Full Changelog](https://github.com/nextlinux/syft/compare/v0.19.0...v0.19.1)
+[Full Changelog](https://github.com/nextlinux/gosbom/compare/v0.19.0...v0.19.1)
 
 ### Bug Fixes
 
-- Redirect cursor hide/show to stderr [[456](https://github.com/nextlinux/syft/pull/456)]
+- Redirect cursor hide/show to stderr [[456](https://github.com/nextlinux/gosbom/pull/456)]
 
 ### Added Features
 
