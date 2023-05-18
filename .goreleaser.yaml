@@ -45,6 +45,162 @@ nfpms:
       arm64: ARM64
       darwin: macOS
       linux: Linux
+dockers:
+  - image_templates:
+      - nextlinux/chronicle:debug
+      - nextlinux/chronicle:{{.Tag}}-debug
+      - ghcr.io/nextlinux/chronicle:debug
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug
+    goarch: amd64
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:debug-arm64v8
+      - nextlinux/chronicle:{{.Tag}}-debug-arm64v8
+      - ghcr.io/nextlinux/chronicle:debug-arm64v8
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-arm64v8
+    goarch: arm64
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/arm64/v8"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:debug-ppc64le
+      - nextlinux/chronicle:{{.Tag}}-debug-ppc64le
+      - ghcr.io/nextlinux/chronicle:debug-ppc64le
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-ppc64le
+    goarch: ppc64le
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/ppc64le"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:debug-s390x
+      - nextlinux/chronicle:{{.Tag}}-debug-s390x
+      - ghcr.io/nextlinux/chronicle:debug-s390x
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-s390x
+    goarch: s390x
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/s390x"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:latest
+      - nextlinux/chronicle:{{.Tag}}
+      - ghcr.io/nextlinux/chronicle:latest
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}
+    goarch: amd64
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-arm64v8
+    goarch: arm64
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/arm64/v8"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-ppc64le
+    goarch: ppc64le
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/ppc64le"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/chronicle:{{.Tag}}-s390x
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-s390x
+    goarch: s390x
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/s390x"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+docker_manifests:
+  - name_template: nextlinux/chronicle:latest
+    image_templates:
+      - nextlinux/chronicle:{{.Tag}}
+      - nextlinux/chronicle:{{.Tag}}-arm64v8
+      - nextlinux/chronicle:{{.Tag}}-ppc64le
+      - nextlinux/chronicle:{{.Tag}}-s390x
+
+  - name_template: nextlinux/chronicle:debug
+      - nextlinux/chronicle:{{.Tag}}-debug
+      - nextlinux/chronicle:{{.Tag}}-debug-arm64v8
+      - nextlinux/chronicle:{{.Tag}}-debug-ppc64le
+      - nextlinux/chronicle:{{.Tag}}-debug-s390x
+
+  - name_template: nextlinux/chronicle:{{.Tag}}
+    image_templates:
+      - nextlinux/chronicle:{{.Tag}}
+      - nextlinux/chronicle:{{.Tag}}-arm64v8
+      - nextlinux/chronicle:{{.Tag}}-ppc64le
+      - nextlinux/chronicle:{{.Tag}}-s390x
+
+  - name_template: ghcr.io/nextlinux/chronicle:latest
+    image_templates:
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-s390x
+
+  - name_template: ghcr.io/nextlinux/chronicle:debug
+    image_templates:
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-arm64v8
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-ppc64le
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-debug-s390x
+
+  - name_template: ghcr.io/nextlinux/chronicle:{{.Tag}}
+    image_templates:
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/chronicle:{{.Tag}}-s390x
 
 universal_binaries:
   - replace: true
